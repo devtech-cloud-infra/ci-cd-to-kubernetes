@@ -1,6 +1,6 @@
-# =========================
+
 # Python
-# =========================
+
 __pycache__/
 *.pyc
 *.pyo
@@ -8,38 +8,32 @@ __pycache__/
 .env
 .venv/
 venv/
+*.log
 
-# =========================
 # Docker
-# =========================
 *.log
 docker-compose.override.yml
 
-# =========================
+
 # Kubernetes
-# =========================
 *.kubeconfig
 kubeconfig
 .kube/
 
-# =========================
+
 # CI/CD & Secrets
-# =========================
 .env.*
 *.secret
 secrets.yaml
 
-# =========================
 # OS & IDE
-# =========================
+
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
 
-# =========================
 # Terraform (if added later)
-# =========================
 .terraform/
 *.tfstate
 *.tfstate.*
