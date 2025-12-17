@@ -25,7 +25,15 @@ that builds a Docker image and deploys it to a Kubernetes cluster.
   - DOCKER_PASSWORD
 
 # Deployment
-kubectl apply -f k8s/
+# install argocd
+kubectl create namespace argocd
+kubectl apply -n argocd \
+  -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+# apply Argocd application
+kubectl apply -f argocd/application.yaml
+# access Argo cd ui
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+
 
 # Use Case
 - Startup application deployment
