@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: yourdockerhubusername/demo-app
+  repository: devtechmarket/demo-app
   tag: latest
   pullPolicy: Always
 
