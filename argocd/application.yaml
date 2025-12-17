@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/yourorg/ci-cd-to-kubernetes.git
+    repoURL: https://github.com/yourorg/cicd-helm-Argo.git
     targetRevision: main
     path: helm/demo-app
 
