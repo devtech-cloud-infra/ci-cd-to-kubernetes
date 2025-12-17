@@ -1,7 +1,7 @@
 # ci-cd-to-kubernetes
 CI/CD PIPELINE TO KUBERNETES
-This repository demonstrates an end-to-end CI/CD pipeline
-that builds a Docker image and deploys it to a Kubernetes cluster.
+This project follows GitOps principles.
+CI builds and pushes the Docker image, while ArgoCD continuously syncs the Helm chart from Git to Kubernetes, ensuring declarative and auditable deployment
 
 # What This Project Shows
 - Dockerized application
